@@ -3,11 +3,11 @@
     <div class="starter-template">
         <h1>
 {{--            {{$category->name}}--}}
-            @if($category == 'mobiles')
+            @if($category->code == 'mobiles')
                 Мобильные телефоны
-            @elseif($category == 'portable')
+            @elseif($category->code == 'portable')
                 Портативная техника
-            @elseif($category == 'appliances')
+            @elseif($category->code == 'techniks')
                 Бытовая техника
             @endif
         </h1>
