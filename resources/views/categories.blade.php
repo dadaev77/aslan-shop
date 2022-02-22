@@ -1,12 +1,13 @@
 @extends('master')
+
 @section('content')
     <div class="starter-template">
         @foreach($categories as $category)
             <div class="panel">
-                <a href="/{{ $category->code }}">
+                   <a href="/{{$category->code}}">
                     <img src="http://laravel-diplom-1.rdavydov.ru/storage/categories/mobile.jpg">
                     <h2>{{ $category->name }}</h2>
-                </a>
+               </a>
                 <p>
                     {{ $category->description }}
                 </p>

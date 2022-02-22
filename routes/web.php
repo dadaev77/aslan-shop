@@ -18,12 +18,14 @@ use App\Http\Controllers\MainController;
 //Route::get('/', function () {
 //    return view('index');
 //});
-
+//Route::get('catalog', [MainController::class, 'index']);
 Route::get('/', [MainController::class, 'index']);
+//Route::get('/home', [MainController::class, 'index']);
 
 Route::get('/{category}', [MainController::class, 'category']);
 
 Route::get('/mobiles/{product?}', [MainController::class, 'product']);
+
 
 
 

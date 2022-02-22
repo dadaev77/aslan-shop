@@ -2,6 +2,7 @@
 @section('content')
     <div class="starter-template">
         <h1>iPhone X 64GB</h1>
+        <h2>{{$product}}</h2>
 
         <p>Цена: <b>41990 руб.</b></p>
         <img src="/img/ix64.jpg" width="300" height="300">

@@ -134,13 +134,14 @@
 
                     </div>
                 </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        Все права защищены © 2021-2022
+        <a class="text-dark" href="https://yandex.ru/">Mail: jasmina031015@gmail.com</a>
+    </div>
+    </footer>
 
 @endsection
 
-{{--<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">--}}
-{{--    © 2022: Dadaev A. M.--}}
-{{--    <a class="text-dark" href="https://yandex.ru/">jasmina031015@gmail.com</a>--}}
-{{--</div>--}}
-{{--</footer>--}}
+
 
 

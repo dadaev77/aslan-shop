@@ -3,16 +3,10 @@
     <div class="starter-template">
         <h1>
             {{$category->name}}
-{{--            @if($category->code == 'mobiles')--}}
-{{--                Мобильные телефоны--}}
-{{--            @elseif($category->code == 'portable')--}}
-{{--                Портативная техника--}}
-{{--            @elseif($category->code == 'techniks')--}}
-{{--                Бытовая техника--}}
-{{--            @endif--}}
+
         </h1>
         <p>
-            В этом разделе вы найдёте самые популярные мобильные телефонамы по отличным ценам!
+            {{$category->description}}
         </p>
         <div class="row">
             <div class="col-sm-6 col-md-4">
@@ -60,6 +54,4 @@
 
         </div>
     </div>
-</div>
-</body>
-</html>
+@endsection
