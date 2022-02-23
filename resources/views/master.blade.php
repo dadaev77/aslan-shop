@@ -24,12 +24,8 @@
                 <li ><a href="{{ route('categories') }}">Категории</a>
                 </li>
                 <li ><a href="{{ route('basket') }}">В корзину</a></li>
-                <li><a href="{{ route('index') }}">Сбросить проект в начальное состояние</a></li>
-            </ul>
 
-            {{--            <ul class="nav navbar-nav navbar-right">--}}
-            {{--                <li><a href="http://laravel-diplom-1.rdavydov.ru/admin/home">Панель администратора</a></li>--}}
-            {{--            </ul>--}}
+            </ul>
         </div>
     </div>
 </nav>

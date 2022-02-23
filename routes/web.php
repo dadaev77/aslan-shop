@@ -18,13 +18,26 @@ use App\Http\Controllers\MainController;
 //Route::get('/', function () {
 //    return view('index');
 //});
-//Route::get('catalog', [MainController::class, 'index']);
-Route::get('/', [MainController::class, 'index']);
-//Route::get('/home', [MainController::class, 'index']);
 
-Route::get('/{category}', [MainController::class, 'category']);
+//Route::get('/', ['MainController@index')->name('index');
+//Route::get('/categories', 'MainController@categories')->name('categories');
+//Route::get('/{category}', 'MainController@category')->name('category');
+//Route::get('/{category}/{product?}', 'MainController@product')->name('product');
+Route::get('/', [MainController::class, 'index'])->name("index");
 
-Route::get('/mobiles/{product?}', [MainController::class, 'product']);
+Route::get('/categories', [MainController::class, 'categories'])->name("categories");
+Route::get('/basket', [MainController::class, 'basket'])->name("basket");
+
+Route::get('/{category}', [MainController::class, 'category'])->name("category");
+
+Route::get('/{category}/{product?}', [MainController::class, 'product'])->name('product');
+
+
+
+Route::get('/basket/place', [MainController::class, 'basketPlace']);
+
+
+
 
 
 
