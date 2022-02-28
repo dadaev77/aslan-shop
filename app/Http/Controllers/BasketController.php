@@ -21,6 +21,7 @@ class BasketController extends Controller
     {
         $orderId = session('orderId');
         if (is_null($orderId)) {
+            echo 123;
             $order = Order::create();
             session(['orderId' => $order->id]);
         }else {
