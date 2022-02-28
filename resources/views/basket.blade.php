@@ -20,7 +20,7 @@
                 <tr>
                     <td>
                         <a href="/img/iphone_x_64">
-                            <img height="56px" src="http://laravel-diplom-1.rdavydov.ru/storage/products/iphone_x.jpg">
+                            <img height="56px" src="i.jpg">
                             iPhone X 64GB
                         </a>
                     </td>
