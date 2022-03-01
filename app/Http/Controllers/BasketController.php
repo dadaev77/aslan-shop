@@ -9,7 +9,12 @@ class BasketController extends Controller
 {
     public function basket()
     {
-        return view('basket');
+        $orderId = session('orderId');
+        if (!is_null($orderId)) {
+            $order = Order::findOrFail($orderId);
+        }
+
+        return view('basket', compact('order'));
     }
 
     public function basketPlace()
@@ -21,7 +26,6 @@ class BasketController extends Controller
     {
         $orderId = session('orderId');
         if (is_null($orderId)) {
-            echo 123;
             $order = Order::create();
             session(['orderId' => $order->id]);
         }else {
